@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "DM Sans Bold";
+  src: url("./assets/fonts/DMSans-Bold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DM Sans Regular";
+  src: url("./assets/fonts/DMSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --color-col-black: #090909; /* Bg Color */
+  --color-col-cream: #fffdd0;
+  --color-col-orange: #cb450c;
+  --color-col-dark: #292a2b;
+  --color-offwhite: #f0ebe6;
+  --color-dark-green: #00554b;
+  --color-light-green: #ceeec6;
+  --color-accent-green: #49ac4f;
+  --color-accent-blue: #00a2d7;
+  --color-accent-purple: #998ae3;
+  --color-accent-pink: #ee99b4;
+  --color-accent-yellow: #f7af2e;
+  --color-accent-light-blue: #5137e7;
+
+  --font-dmsans-b: "DM Sans Bold", sans-serif;
+  --font-dmsans-r: "DM Sans Regular", sans-serif;
+
+  /* Breakpoints */
+  --breakpoint-sm: 480px;
+}
+
+body {
+  font-family: var(--font-dmsans-r), sans-serif;
+  background-color: var(--color-col-black);
+  color: var(--color-offwhite);
+  overflow: hidden;
+}
